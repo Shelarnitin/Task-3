@@ -1,0 +1,45 @@
+/* style.css */
+
+/* Smooth scroll and font setup */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Service card hover effect */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframe animation for header text */
+header h1 {
+  animation: fadeInDown 1.2s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .service-card {
+    margin-bottom: 15px;
+  }
+}
